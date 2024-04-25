@@ -1,3 +1,46 @@
+# GeminiMatch
+
+**GeminiMatch** is go-to destination for **personalized product recommendations** tailored to your unique need.  It is like a **personal shopping assistant**, helping you find the perfect tech in no time.
+
+## Inspiration 
+
+We've all been there, endlessly searching online for the right buy. That's why we created **GeminiMatch**. Say goodbye to endless scrolling and hello to easy, personalized shopping.
+
+## What it does
+
+GeminiMatch takes the stress out of finding the perfect tech for you. *Our secret weapon? **Gemini AI***. This powerful technology lets us search across online retailers at lightning speed.  *We don't just find any tech, we find the perfect match for your needs and budget*.
+
+GeminiMatch learns your preferences, so we can highlight the features that matter most to you. Stop comparing endless specs and prices! With GeminiMatch, finding your dream tech takes just minutes.
+
+
+## How we built it
+
+We built GeminiMatch using cutting-edge web development tools and **seamlessly integrated the power of Gemini AI.** This lets us process massive amounts of data to find the best deals without slowing you down.  The **Google AI documentation** was the main source of information here! We have use **REACT framework** for web development.
+
+## Challenges we ran into
+
+We encounter several problems over the whole duration of completing this project. **Developing GeminiMatch required us to prioritize an exceptional user experience (UX). This led to extensive discussions and refinements during the design process to ensure a smooth and intuitive user journey.**
+
+A significant technical hurdle involved ** integrating the Gemini API data seamlessly into our application's frontend**. That took a lot of searches over the Internet and documentation. We are proud to have overcome this challenge and successfully implemented the integration
+
+## Accomplishments that we're proud of
+
+This is our second participation as a team in a Hackathon sponsered by Google.** We're happy that we've grown together as a team**. We learned how to work together , how to distribute tasks and how to discuss everything out. 
+Secondly, we're proud that this time we have a working model of our App, which we have made with lots of efforts and dedication. 
+
+** This Hackathon journey was wholesome as a team and as a developer!**
+
+## What we learned
+
+This hackathon was an invaluable learning experience. Notably, it provided **our first opportunity to work with the Google Gemini API**.  The integration process involved a deep dive into the API's functionalities and documentation, significantly expanding our technical skillset. We found this process both challenging and rewarding, ultimately achieving a successful integration.
+
+## What's next for GeminiMatch
+
+There are many new advancement which we are aiming to do -
+1.  We aims to make it a general recommendation app with many sub-category like gadgets, clothes etc.
+
+2.  We aims to store the data of user and provide a personalised recommendation based on recent purchase or wishlisted product!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -11,60 +54,4 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+T
