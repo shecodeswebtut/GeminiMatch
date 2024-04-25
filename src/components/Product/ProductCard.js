@@ -9,7 +9,7 @@ function ProductCard(props) {
 
   const [json, setJson] = useState(null)
 
-  const genAI = new GoogleGenerativeAI("AIzaSyDLBC-SeZVdTCCe01OYspRMOYDK783VNxc");
+  const genAI = new GoogleGenerativeAI(process.env.API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
   let { company, ram, price, storage } = props;
