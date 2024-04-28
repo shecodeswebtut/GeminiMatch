@@ -1,18 +1,16 @@
 import React from 'react'
 import ProductDesc from './ProductDesc'
 
-function ProductDetail() {
+function ProductDetail(props) {
+  let {title,desc,price}=props
  
   return (
     <>
-      <div className='title'>Here are top 7 phone list as per your choice</div>
+      <div className='title'>Here are the results of your search</div>
       <div className="flex">
-        <ProductDesc ></ProductDesc>
-        <ProductDesc ></ProductDesc>
-        <ProductDesc ></ProductDesc>
-        <ProductDesc ></ProductDesc>
-        <ProductDesc ></ProductDesc>
-        <ProductDesc ></ProductDesc>
+        <div>{title}</div>
+        <div>{desc}</div>
+        
       </div>
      
      

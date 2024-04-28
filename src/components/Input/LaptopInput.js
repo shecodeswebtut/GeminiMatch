@@ -1,13 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
 import './laptop.css'
-import ProductCard from '../Product/ProductCard'
+import Laptop from '../Product/Laptop'
 
 
 function App() {
 
   const [submit,setSubmit]=useState(false)
-  const [credentials, setCredentials] = useState({ company: "", ram: "",storage:"", price: "" });
+  const [credentials, setCredentials] = useState({ company: "", category: "",price:"", processor: "" ,ram:""});
     const onChange = (e) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value })
     }
@@ -23,60 +23,88 @@ function App() {
       
     {submit===false? <div className="App">
       <form >
-      <div style={{"margin":"21px","color":"#00d6ff","text-align":"center"}}>Please select the option that best describes what you're looking for today</div>
+      <div className='Heading-form'>Please select the option that best describes what you're looking for today</div>
     
         <div className="form-group">
           <label htmlFor="company" className="form-label">Select a specific company or select all</label>
           <div  className='input-form'>
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="company" value="samsung"  />
-              <label className="labels" htmlFor="male">Samsung</label>
+              <input type="radio" onChange={onChange} name="company" value="dell"  />
+              <label className="labels" htmlFor="price">Dell</label>
             </div>
 
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="company" value="oppo"  />
-              <label className="labels" htmlFor="male">Oppo</label>
+              <input type="radio" onChange={onChange} name="company" value="hp"  />
+              <label className="labels" htmlFor="price">HP</label>
             </div>
 
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="company" value="vivo"  />
-              <label className="labels" htmlFor="male">Vivo</label>
+              <input type="radio" onChange={onChange} name="company" value="mac"  />
+              <label className="labels" htmlFor="price">MAC</label>
             </div>
 
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="company" value="apple"  />
-              <label className="labels" htmlFor="male">Apple</label>
+              <input type="radio" onChange={onChange} name="company" value="asus"  />
+              <label className="labels" htmlFor="price">ASUS</label>
             </div>
 
              <div className="input-grp">
               <input type="radio" onChange={onChange} name="company" value="all"  />
-              <label className="labels" htmlFor="male">All</label>
+              <label className="labels" htmlFor="price">All</label>
             </div>
           </div>
         </div>
+
+        <div className="form-group">
+          <label htmlFor="category" className="form-label">Select the category?</label>
+          <div className='input-form'>
+             <div className="input-grp">
+              <input type="radio" onChange={onChange} name="price" value="gaming"  />
+              <label className="labels" htmlFor="price">Gaming Laptop</label>
+            </div>
+             <div className="input-grp">
+              <input type="radio" onChange={onChange} name="price" value="everyday-use"  />
+              <label className="labels" htmlFor="price">Everyday Use</label>
+            </div>
+             <div className="input-grp">
+              <input type="radio" onChange={onChange} name="price" value="education"  />
+              <label className="labels" htmlFor="price">Educational Use</label>
+            </div>
+             <div className="input-grp">
+              <input type="radio" onChange={onChange} name="price" value="performance"  />
+              <label className="labels" htmlFor="price">Performance</label>
+            </div>
+            <div className="input-grp">
+              <input type="radio" onChange={onChange} name="price" value="all"  />
+              <label className="labels" htmlFor="price">ALL</label>
+            </div>
+          </div>
+        
+        </div>
+        
 
         <div className="form-group">
           <label htmlFor="price" className="form-label">Select a specific range of price</label>
           <div  className='input-form'>
              <div className="input-grp">
               <input type="radio" onChange={onChange} name="price" value="15,000-30,000"  />
-              <label className="labels" htmlFor="male">15,000-30,000</label>
+              <label className="labels" htmlFor="price">₹15,000-30,000</label>
             </div>
              <div className="input-grp">
               <input type="radio" onChange={onChange} name="price" value="30,000-45,000"  />
-              <label className="labels" htmlFor="male">30,000-45,000</label>
+              <label className="labels" htmlFor="price">₹30,000-45,000</label>
             </div>
              <div className="input-grp">
               <input type="radio" onChange={onChange} name="price" value="45,000-65,000"  />
-              <label className="labels" htmlFor="male">45,000-65,000</label>
+              <label className="labels" htmlFor="price">₹45,000-65,000</label>
             </div>
              <div className="input-grp">
               <input type="radio" onChange={onChange} name="price" value="65,000-1,20,000"  />
-              <label className="labels" htmlFor="male">65,000-1,20,000</label>
+              <label className="labels" htmlFor="price">₹65,000-1,20,000</label>
             </div>
             <div className="input-grp">
               <input type="radio" onChange={onChange} name="price" value="all"  />
-              <label className="labels" htmlFor="male">All</label>
+              <label className="labels" htmlFor="price">All</label>
             </div>
 
          
@@ -84,66 +112,66 @@ function App() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="storage" className="form-label">Select storage</label>
+          <label htmlFor="storage" className="form-label">Select the processor requirements</label>
           <div  className='input-form'>
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="storage" value="32GB"  />
-              <label className="labels" htmlFor="male">32 GB</label>
+              <input type="radio" onChange={onChange} name="storage" value="i3"  />
+              <label className="labels" htmlFor="price">Core i3</label>
             </div>
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="storage" value="64GB"  />
-              <label className="labels" htmlFor="male">64 GB</label>
+              <input type="radio" onChange={onChange} name="storage" value="i5"  />
+              <label className="labels" htmlFor="price">Core i5</label>
             </div>
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="storage" value="128GB"  />
-              <label className="labels" htmlFor="male">128 GB</label>
+              <input type="radio" onChange={onChange} name="storage" value="i7"  />
+              <label className="labels" htmlFor="price">Core i7</label>
             </div>
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="storage" value="256GB"  />
-              <label className="labels" htmlFor="male">256 GB</label>
+              <input type="radio" onChange={onChange} name="storage" value="i9"  />
+              <label className="labels" htmlFor="price">Core i9</label>
             </div>
             <div className="input-grp">
               <input type="radio" onChange={onChange} name="storage" value="all"  />
-              <label className="labels" htmlFor="male">All</label>
+              <label className="labels" htmlFor="price">All</label>
             </div>
          
           </div>
         </div>
 
         <div className="form-group">
-          <label htmlFor="ram" className="form-label">RAM</label>
+          <label htmlFor="ram" className="form-label">What about the RAM Capacity?</label>
           <div className='input-form'>
              <div className="input-grp">
-              <input type="radio" onChange={onChange} name="price" value="2 GB"  />
-              <label className="labels" htmlFor="male">2 GB</label>
-            </div>
-             <div className="input-grp">
               <input type="radio" onChange={onChange} name="price" value="4 GB"  />
-              <label className="labels" htmlFor="male">4 GB</label>
-            </div>
-             <div className="input-grp">
-              <input type="radio" onChange={onChange} name="price" value="6 GB"  />
-              <label className="labels" htmlFor="male">6 GB</label>
+              <label className="labels" htmlFor="price">4 GB</label>
             </div>
              <div className="input-grp">
               <input type="radio" onChange={onChange} name="price" value="8 GB"  />
-              <label className="labels" htmlFor="male">8 GB OR MORE</label>
+              <label className="labels" htmlFor="price">8 GB</label>
+            </div>
+             <div className="input-grp">
+              <input type="radio" onChange={onChange} name="price" value="16 GB"  />
+              <label className="labels" htmlFor="price">16 GB</label>
+            </div>
+             <div className="input-grp">
+              <input type="radio" onChange={onChange} name="price" value="32 GB"  />
+              <label className="labels" htmlFor="price">32 GB OR MORE</label>
             </div>
             <div className="input-grp">
-              <input type="radio" onChange={onChange} name="price" value="all"  />
-              <label className="labels" htmlFor="male">All</label>
+              <input type="radio" onChange={onChange} name="price" value="64 GB"  />
+              <label className="labels" htmlFor="price">64GB</label>
             </div>
           </div>
         
         </div>
         
 
+        <div type='submit' className="text-center btns" onClick={handleSubmit}>Submit </div>
 
        
      
       </form>
-      <div type='submit' className="text-center btns" onClick={handleSubmit}>Submit </div>
-      </div>:<ProductCard company={credentials.company} ram={credentials.ram} price={credentials.price} storage={credentials.storage}></ProductCard>}
+      </div>:<Laptop company={credentials.company} ram={credentials.ram} price={credentials.price} storage={credentials.storage}></Laptop>}
    
     </>
   );

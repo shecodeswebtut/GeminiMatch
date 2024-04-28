@@ -23,11 +23,12 @@ function Navbar() {
         </div>
         <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/newarrivals">Find Product</Link></li>
+            <li><Link to="/compare">About</Link></li>
+            <li><Link to="/search">Search Product</Link></li>
         </ul>
 
        <div className="visible">
-            {!localStorage.getItem('token')? <Link to='/login'><img className="image-svg user" src={user} alt=""/>Login</Link>:<Link to='/user'><img className="image-svg user" src={user} alt=""/>User</Link>}
+            <Link to='/login'><img className="image-svg user" src={user} alt=""/></Link>
           
             
         </div>

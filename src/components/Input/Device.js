@@ -1,50 +1,25 @@
 import React, { useState } from 'react'
-import Laptop from '../Input/LaptopInput'
+import LaptopInput from '../Input/LaptopInput'
+import CameraInput from './CameraInput'
+import MobileInput from './MobileInput'
+import SpeakerInput from './SpeakerInput'
 
 
 
 function Device(props) {
-  let device = props;
-  let [laptop,setLaptop]=useState(true)
-  let [camera,setCamera]=useState(false)
-  let [speaker,setSpeaker]=useState(false)
-  let [mobile,setMobile]=useState(false)
-
-  if(device==='camera'){
-    setCamera(true)
-    setLaptop(false)
-    setSpeaker(false)
-    setMobile(false)
-  }
-  else if(device==='speaker'){
-    setCamera(false)
-    setLaptop(false)
-    setSpeaker(true)
-    setMobile(false)
-  }
-  else if(device==='mobile'){
-    setCamera(false)
-    setLaptop(false)
-    setSpeaker(false)
-    setMobile(true)
-  }
-  else{
-    setCamera(false)
-    setLaptop(true)
-    setSpeaker(false)
-    setMobile(false)
-  }
-
+  let object = props;
+  let device=object.category
+  
   return (
     <>
     
-       {laptop ? (
-        <Laptop/>
-      ) : (speaker ? (
-        <Laptop/>):(
-          camera?(
-            <Laptop/>):(
-              <Laptop/>
+       {device==='Laptop' ? (
+        <LaptopInput/>
+      ) : (device==='Speaker' ? (
+        <SpeakerInput/>):(
+          device==='Camera'?(
+            <CameraInput/>):(
+              <MobileInput/>
             )
           )
         

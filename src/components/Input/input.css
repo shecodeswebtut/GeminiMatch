@@ -3,11 +3,17 @@ body{
  
   background: white;
 }
+
+.bg-aliceblue{
+  background: aliceblue;
+  padding: 46px;
+  height: 100vh;
+}
   
   #regBox {
-    box-shadow: 0px 0px 7px #797777;
+    box-shadow: 0px 0px 7px #9b9b9b;
     padding: 15px;
-    background: #1c1c1d;
+    background: #184884;
     width: 41vw;
     margin: 10vh auto 0vh;
     height: 36vh;
@@ -43,7 +49,21 @@ color: #ffdd08;
   padding: 6px 21px ;
   top: 7vh;
   position: relative;
-  left: 46vw;
+  left: 42vw;
+  color: #184884;
+  margin: auto;
+  font-weight: 500;
+  cursor: pointer;
+  width: 14vw;
+  border: 2px solid #1d397e;
+  border-radius: 3px;
+  font-size: 23px;
+ 
+ }
+
+ .input-button:hover{
+  background-color: #1d397e;
+  color: white;
  }
 /* 
  .button-div{

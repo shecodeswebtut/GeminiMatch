@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 
 const MyComponent = () => {
     const options = [
+      { value: 'Select category', label: 'Select category' },
         { value: 'Laptop', label: 'Laptop' },
         { value: 'Mobile', label: 'Mobile' },
         { value: 'Camera', label: 'Camera' },
@@ -22,6 +23,7 @@ const MyComponent = () => {
       }
     return (
       <>
+      <div className='bg-aliceblue'>
       <div className="heading-info">
         <p className=""> Tired of wading through endless tech specs and reviews? Let us help you find the perfect gadgets that fit your needs and budget.</p>
         <p className="">We get it. Let <p className="special"> our recommendation engine </p>be your guide! Answer a few questions about your needs , and we'll curate a personalized list of the <p className="special"> top 5 </p> gadgets for you.</p>
@@ -38,8 +40,8 @@ const MyComponent = () => {
 </select>
   </div>
 
-   <Link className="text-center btns input-button " to={`/${val}`} role="button">NEXT</Link>
-
+   <Link className="text-center input-button " to={`/${val}`} role="button">NEXT</Link>
+</div>
      </>
 )
 }

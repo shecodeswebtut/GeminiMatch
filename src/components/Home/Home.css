@@ -17,7 +17,7 @@
 
 .btns{
     color: #184884;
-    margin: 28px auto;
+    margin: 23px auto;
     width: 14vw;
     font-weight: 500;
     cursor: pointer;
@@ -46,9 +46,10 @@
 }
 
 .appname{
-    font-weight: 500;
-    text-shadow: 4px 1px 0px #095a1f;
-    color: #0fcd0e;
+    font-weight: 700;
+    font-size: 68px;
+    /* text-shadow: 4px 1px 0px #095a1f; */
+    color: #01a900;
 }
 .about-heading {
     text-align: center;
@@ -59,8 +60,9 @@
 }
 
 .heading-info{
-    color: #56223e;
-    margin: 33px auto 0px;
+    background: aliceblue;
+    color: #000000;
+    margin: auto;
     width: 76vw;
     text-align: center;
     font-size: 17px;

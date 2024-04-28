@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard from './ProductCard'
+import Mobile from './Mobile'
 
 function product() {
   return (
@@ -8,31 +8,31 @@ function product() {
     <div class="container text-center">
   <div class="row">
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
     <div class="col">
-       <ProductCard/>
+       <Mobile/>
     </div>
   </div>
   
